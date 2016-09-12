@@ -1,5 +1,6 @@
 //Intialize any color varibles here
 @backgroundColor: #ea1ac1;
+@otherColor : #39ff14;
 @textColor: #fcc426;
 
 //Classes for index.ejs here
@@ -80,3 +81,37 @@
 	color: @textColor;
 }
 
+
+//Classes for enter.ejs 
+
+@keyframes enteranimation {
+	from {background-color: @backgroundColor;}
+	to {background-color: @otherColor;}
+}
+
+.enterPage {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	animation-name: enteranimation;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.enterContent {
+	padding-top: 150px;
+}
+
+.pictureCenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+}
+
+.pictureRow {
+	padding-top: 50px;
+}
