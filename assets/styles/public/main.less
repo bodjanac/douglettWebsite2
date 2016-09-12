@@ -1,0 +1,117 @@
+//Intialize any color varibles here
+@backgroundColor: #ea1ac1;
+@otherColor : #39ff14;
+@textColor: #fcc426;
+
+//Classes for index.ejs here
+
+.wholePage {
+	background-color: @backgroundColor;
+	//height: 1200px;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.headerBar {
+	height: 200px;
+}
+
+.minion {
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.douglett {
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titleBlock {
+	text-align: center;
+	height: 100%;
+}
+
+.titleText {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	font-size: 40px;
+  	color: @textColor;
+}
+
+.contentBlock {
+	padding-top: 100px;
+}
+
+.chuckFace {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@keyframes chuck {
+	from {width: 359px; height: 407px;}
+	to {width: 450px; height: 500px; -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+.chuckFace:hover {
+	animation-name: chuck;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.chuckFaceDiv {
+	width: 50%;
+}
+
+.clickToEnterDiv {
+	padding-top: 30px;
+}
+
+.clickToEnterText {
+	text-align: center;
+	font-size: 30px;
+	color: @textColor;
+}
+
+
+//Classes for enter.ejs 
+
+@keyframes enteranimation {
+	from {background-color: @backgroundColor;}
+	to {background-color: @otherColor;}
+}
+
+.enterPage {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	animation-name: enteranimation;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.enterContent {
+	padding-top: 150px;
+}
+
+.pictureCenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+}
+
+.pictureRow {
+	padding-top: 50px;
+}
