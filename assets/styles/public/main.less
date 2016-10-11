@@ -1,7 +1,7 @@
 //Intialize any color varibles here
-@backgroundColor: #ea1ac1;
+@backgroundColor: #000000;
 @otherColor : #39ff14;
-@textColor: #fcc426;
+@textColor: #e50000;
 
 //Classes for index.ejs here
 
@@ -15,12 +15,29 @@
 		font-size: 18px;
 	}
 
+	.warText {
+		font-size: 16px;
+	}
+
+	.subWarText {
+		font-size: 14px;
+	}
+
 	.headerBar {
 		height: 70px;
 	}
 
 	.contentBlock {
 		padding-top: 30px;
+	}
+
+	.wantedPictures {
+		width: 100px;
+		height: 200px;
+	}
+
+	.wantedSubText {
+		font-size: 12px;
 	}
 
 	@keyframes smallchuck {
@@ -54,12 +71,29 @@
 		font-size: 40px;
 	}
 
+	.warText {
+		font-size: 35px;
+	}
+
+	.subWarText {
+		font-size: 30px;
+	}
+
 	.headerBar {
 		height: 150px;
 	}
 
 	.contentBlock {
 		padding-top: 50px;
+	}
+
+	.wantedPictures {
+		width: 300px;
+		height: 400px;
+	}
+
+	.wantedSubText {
+		font-size: 20px;
 	}
 
 	.chuckFace {
@@ -105,6 +139,30 @@
   	top: 50%;
   	transform: translateY(-50%);
   	color: @textColor;
+}
+
+.warText {
+	color: @textColor;
+}
+
+.subWarText {
+	color: @textColor;
+}
+
+.wantedPictures {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wantedPicturesPadding {
+	padding: 10px;
+	width: 50%;
+}
+
+.wantedSubText {
+	color: @textColor;
+	text-align: center;
 }
 
 .chuckFace {
